@@ -183,6 +183,7 @@ execute "Download Jenkins-cli jar" do
   not_if { File.exists?("/var/chef/cache/jenkins-cli.jar") }
 end
 
+=begin
 
 # Jenkins Authentication
 execute "Jenkins Login" do
@@ -190,6 +191,7 @@ execute "Jenkins Login" do
   action :run
   ignore_failure true
 end
+=end
 
 # Install Plugins for Jenkins 
 
